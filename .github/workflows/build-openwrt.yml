@@ -58,11 +58,12 @@ jobs:
 
     - name: Clone source code
       run: git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
-
+    
+    - name: chmod
+      run: sudo -E chmod -R 777 ./
+    
     - name: Update feeds
-      run: 
-          sudo -E chmod -R 777 ./
-          cd openwrt && ./scripts/feeds update -a
+      run: cd openwrt && ./scripts/feeds update -a
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
