@@ -23,7 +23,7 @@ on:
 #    types: started
 
 env:
-  REPO_URL: https://github.com/lzsbb/9331
+  REPO_URL: https://github.com/lzsbb/9341
   REPO_BRANCH: master
   CONFIG_FILE: .config
   DIY_SH: diy.sh
