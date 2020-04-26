@@ -23,11 +23,11 @@ on:
 #    types: started
 
 env:
-  REPO_URL: https://github.com/lzsbb/9341
+  REPO_URL: https://github.com/lzsbb/ahoy
   REPO_BRANCH: master
   CONFIG_FILE: .config
   DIY_SH: diy.sh
-  SSH_ACTIONS: true
+  SSH_ACTIONS: false
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
